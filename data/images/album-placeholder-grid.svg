@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>album-placeholder-grid</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-1" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+        <g id="icon_Playlist" sketch:type="MSLayerGroup" transform="translate(70.000000, 70.000000)">
+            <path id="Shape" stroke="#449FDB" opacity="0" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M30,0 C13.5,0 0,13.5 0,30 C0,46.5 13.5,60 30,60 C46.5,60 60,46.5 60,30 C59.499375,13.5 46.5,0 30,0 L30,0 Z M30,39.999375 C24.500625,39.999375 20.000625,35.499375 20.000625,30 C20.000625,24.500625 24.500625,20.000625 30,20.000625 C35.499375,20.000625 39.500625,24.500625 39.500625,30 C39.500625,35.499375 35.000625,39.999375 30,39.999375 L30,39.999375 Z" id="Shape" fill="#606060" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

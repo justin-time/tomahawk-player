@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChartsWidget</class>
+ <widget class="QWidget" name="ChartsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="Tomahawk::Breadcrumb" name="breadCrumbLeft" native="true"/>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackLeft">
+     <widget class="QWidget" name="page">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="GridView" name="tracksView">
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="GridView" name="artistsView">
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page2">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="GridView" name="albumsView">
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GridView</class>
+   <extends>QListView</extends>
+   <header>playlist/GridView.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TrackView</class>
+   <extends>QTreeView</extends>
+   <header>playlist/TrackView.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Tomahawk::Breadcrumb</class>
+   <extends>QWidget</extends>
+   <header>widgets/Breadcrumb.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

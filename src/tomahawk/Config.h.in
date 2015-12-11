@@ -1,0 +1,28 @@
+#ifndef CONFIG_H_IN
+#define CONFIG_H_IN
+
+#define CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}"
+#define CMAKE_INSTALL_FULL_LIBEXECDIR "${CMAKE_INSTALL_FULL_LIBEXECDIR}"
+#define CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_LIBDIR}"
+
+
+#cmakedefine MOUNTAIN_LION
+#cmakedefine LION
+#cmakedefine SNOW_LEOPARD
+#cmakedefine LEOPARD
+#cmakedefine HAVE_SPARKLE
+#cmakedefine CXX_STD_FUNCTIONAL
+
+#cmakedefine WITH_CRASHREPORTER
+#cmakedefine WITH_BINARY_ATTICA
+#cmakedefine WITH_QtSparkle
+#cmakedefine WITH_UPOWER
+#cmakedefine WITH_GNOMESHORTCUTHANDLER
+
+#cmakedefine LIBLASTFM_FOUND
+#cmakedefine QCA2_FOUND
+
+#cmakedefine TOMAHAWK_FINEGRAINED_MESSAGES
+#cmakedefine COMPLEX_TAGLIB_FILENAME
+
+#endif // CONFIG_H_IN

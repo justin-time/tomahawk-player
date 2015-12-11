@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Tomahawk
+GenericName=Music Player
+GenericName[de]=Musik Player
+GenericName[fi]=Musiikkisoitin
+GenericName[pl]=Odtwarzacz Muzyki
+GenericName[ro]=Redare muzică
+GenericName[se]=Musikspelare
+TryExec=tomahawk
+Exec=tomahawk %u
+Comment=Tomahawk — Multi Source Music Player
+Comment[fi]=Tomahawk – sosiaalinen musiikkisoitin
+Comment[pl]=Tomahawk – Społecznościowy Odtwarzacz Muzyki
+Comment[ro]=Tomahawk – Redare muzică în mod social
+Comment[se]=Tomahawk — Den Sociala Musikspelaren
+Icon=tomahawk
+Terminal=false
+Categories=Qt;AudioVideo;Audio;Player;
+MimeType=x-scheme-handler/tomahawk;x-scheme-handler/spotify;audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/opus;application/opus;audio/x-vorbis;application/x-ogm-audio;audio/x-vorbis+ogg;audio/ogg;application/xspf+xml;application/jspf;

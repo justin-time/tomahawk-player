@@ -1,0 +1,549 @@
+Version 0.8.4:
+    * Fixed drag & drop issues on sidebar.
+    * Fixed starting Tomahawk with a filename as parameter.
+    * Update column view when collection changes.
+    * (Linux) Don't crash on environments with invalid locales.
+
+Version 0.8.3:
+    * Performance improvements for collection browsing.
+    * Improved memory footprint.
+    * Show cloud collections above your friends in the sidebar.
+    * Keep looking for alternative sources even when we found a perfect match.
+    * Fixed crash in network code.
+    * Fixed repeat one/all icons.
+    * Be more lenient about accepting JSPF and M3U playlists.
+    * Improved support for compilation albums.
+    * (Windows) Fixed support for Windows XP.
+    * (OS X) Fixed settings dialog appearance on Yosemite.
+    * (OS X) Fixed SSL errors on Yosemite.
+
+Version 0.8.2:
+    * Show error message if saving tags failed.
+    * Fixed painting issue on search page.
+    * (OS X & Windows) Fixed crash during collection scan.
+
+Version 0.8.1:
+    * Disabled sorting for stations.
+    * Fixed drag & drop behavior in combination with certain resolvers.
+    * Fixed infinite scanning recursion.
+    * Prevented adding dupes to the collection when scanning.
+    * When playing an artist or album, don't give up when the first track
+      in list isn't playable.
+    * Fixed importing M3U playlists.
+    * Sort album grids by artist name.
+    * Fixed painting issue on 'More Albums' grid.
+    * Fixed crash when editing/saving track tags.
+
+Version 0.8.0:
+    * Redesigned - Shiny new interface. Simplified. New icons.
+    * Added Friend Feed.
+    * Now Playing notifications (OS X & Windows) - support for OS-level
+      notification systems (e.g. Notification Center) with fallback to its own
+      native notification system.
+    * Many actions now available in context menu - including Favorite and Send
+      to a Friend.
+    * Drag and drop support for iTunes, Deezer, Beats Music, Rdio, Spotify,
+      SoundCloud links (into Tomahawk) for playlists/tracks/artists/album urls.
+    * Support for clicking source icon for currently playing track in audio
+      controls to take user to associated page on source's site.
+    * Added Hatchet plug-in.
+    * Added Google Play Music and Beats Music support.
+    * Add links to Support site, Bug Reports and Translations to Help menu.
+    * Add "What's New" page to display on first launch (or until dismissed).
+      Also available from Help menu.
+    * Changed label from "Resolvers" and "Services" to more generic "Plug-Ins".
+    * Clarified some labels, help text and status messages.
+    * Changed icon color a bit.
+    * Added "Acoustic" and "Electric" songtypes to Stations options.
+    * Removed some stale Chart sources.
+    * Playback Queue now saves its state across sessions.
+    * Queue now moved to sidebar.
+    * Added "Inbox" feature, showing incoming song recommendations. Dropping
+      a track on a user in the sidebar sends a recommendation to them.
+    * You will now be asked whether you want to trust invalid SSL certificates.
+    * Improved connecting between Tomahawk peers and support multiple IPs
+      (including IPv6).
+    * Removed Top Loved from sidebar.
+    * Removed Spotify playlist syncing (will return in future versions).
+    * HTTP(S) streaming is now done by Tomahawk instead of the Phonon backend
+      (fixed HTTPS streaming on MacOS).
+    * Heavily reduced memory footprint during and after indexing the database.
+    * Retina display and DPI scaling fixes.
+    * New Collection views. Re-added support for tracklist view of Collection.
+    * Added Telepathy support.
+    * Plugin refactoring (and .AXE resolver binaries).
+    * Removed Twitter due to change in Twitter's API.
+    * Removed auto-playlists.
+    * Improved error messages.
+    * Added basic remote control API.
+    * Add support for Opus codec (requires TagLib 1.9).
+    * Support rtmp:// streams.
+    * Support custom headers in CustomUrlHandler.
+    * Fuzzy search indices for JS Resolvers.
+    * Add metadata retrieval of HTTP(S) streams in JavaScript resolvers.
+
+Version 0.7.0:
+    * JavaScript Resolvers can now expose collections.
+    * Introduced bundle system for JavaScript Resolvers, called "axes".
+    * Fixed playback-loop caused by duplicate tracks in a playlist.
+    * Improved peer handling and removed connection support through Twitter.
+    * Taking an account offline now also disconnects associated peers.
+    * Improved spotify protocol handling.
+    * Added "Append to Playlist" context menu item.
+    * User-friendlier collection handling: added info-buttons for artists and
+      albums. Double-clicking an item expands it now.
+    * Charts only load on-demand now.
+    * Fixed Diagnostics information not correctly updating.
+    * Fixed issue with hidden sidebar and panels.
+    * Fixed issues with some color schemes.
+    * Fixed playing files with special characters in the filename.
+    * Improved stability.
+    * Added translations for Catalan, Czech, Galician, Greek, Italian and
+      Chinese.
+    * (Windows) Smoother and more responsive audio playback.
+    * (Linux) Fixed grid issues with GTK-styles.
+
+Version 0.6.1:
+    * Improved stability.
+    * Improved UPnP detection and port-forwarding.
+    * Fixed scrolling behaviour of grid-views.
+    * Lots of small design tweaks and fixes.
+
+Version 0.6.0:
+    * Improved icon theme with vector graphics.
+    * Higher resolution artist and album images.
+    * You can now click artists, albums and tracks mentioned in artists'
+      biographies.
+    * New AudioControl logic - only enable Prev/Skip buttons if available.
+    * Added more options to right-click/context menus.
+    * Resolver source icon in Audiocontrols now supports being a link-back URL
+      to original source.
+    * Make friends' currently playing song (in sidebar) clickable.
+    * Improve MusicBrainz plugin to use normalized artist names and avoid
+      duplicate tracks.
+    * Access Control queries now stay on the bottom of the job view, removing
+      the tendency to jump away from the mouse.
+    * Improved random mode, preventing songs from being played in too rapid
+      succession.
+    * You can now choose between various view modes for your playlists.
+    * Nicer layout for the Artist, Album & Track pages.
+    * Follow HTTP redirects when fetching Playlists.
+    * Main menu can now be hidden and instead be shown as a toolbar button.
+    * Connectivity controls in the toolbar.
+    * Cleaned up settings dialog.
+    * Ability to sync Spotify Starred Tracks with Tomahawk's Loved Tracks.
+    * Remove YouTube resolver from plug-in directory on request of YouTube.
+    * Fixed iTunes m3u playlist support.
+    * Support dropping of new Soundcloud user, track, set & likes URLs.
+    * Added HotNewHipHop as available chart.
+    * Added iTunes as available source for New Releases.
+    * Updates and additions to translations including: Japanese, Bulgarian, 
+      Finnish, Russian, Arabic, Chinese, Swedish, Czech and more.
+    * (Windows) Added thumb buttons to Windows 7's taskbar.
+    * (Linux) Allow disabling of playback notifications.
+
+Version 0.5.5:
+    * Changed the Spotify config dialog to indicate when the user
+      is logged in.
+    * Fixed bug where the wrong avatar could be shown for a user.
+    * Fixed shortcuts not working in the global search field on OS X.
+    * Fixed The Echo Nest stations.
+    * Code-signed executable on OS X for GateKeeper.
+    * Fixed logging in to Spotify when pressing return in the config dialog.
+    * Fixed queue not auto-collapsing when playing the last track.
+    * Fixed bug where album listings would fail to show up.
+    * Improved stability.
+    * Fixed bug where it was not possible to drop a mixture of resolved
+      and unresolved tracks onto a playlist.
+
+Version 0.5.4:
+    * Improved stability.
+    * Added support for Spotify album lookups.
+    * Fixed not always updating the database index after scanning.
+    * Fixed connection issue between Tomahawk peers.
+
+Version 0.5.3:
+    * Fixed broken artist names when importing Last.fm playback history.
+    * Fixed crash when filtering collections.
+
+Version 0.5.2:
+    * Fixed a crash when invalid results are coming back from a resolver or
+      are found in a playlist.
+
+Version 0.5.1:
+    * Fixed a few issues with automatic downloading and launching
+      of the Spotify account.
+    * Show an error message when not able to resolve a requested song.
+    * Fixed a few crash and freeze issues.
+    * Better detection of local networks for the Local Network connector.
+    * Don't prompt for access permission for your own accounts.
+    * (OS X) Fixed not being able to connect to Last.fm.
+
+Version 0.5.0:
+    * SOCKS5 proxy support improvements for resolvers and more.
+    * Initial Access Control support, allowing users to define who is able to
+      access and stream from their collection.
+    * Priortize resolution of a track on double-click.
+    * Spotify Resolver can now be easily installed on-demand from the settings.
+    * You can now sync selected playlists (and updates) with Spotify.
+    * Support .aiff (AIFF mimetype) files.
+    * Cleaned up Diagnostics window.
+    * You can tell Tomahawk to stop playback after a certain track finished.
+    * Double-clicking a playlist name (in the sidebar) will start the playlist.
+    * You can now import your entire Last.fm playback history into Tomahawk.
+    * Fixed sorting of related artists.
+    * Support for multimedia keys (Play, Pause, Next etc.) on Windows & Linux.
+    * When listening privately scrobbling to Last.fm and Adium is now disabled.
+    * Added a toolbar with page back / forward buttons and the global search.
+    * New grid-like view with direct playback controls.
+    * You can now browse new releases (by genre).
+    * Added social sharing widget, which allows you to tweet about a song.
+    * Added a track page showing a song's similar tracks and statistics.
+    * Separate Loved Tracks and Recently Played views per source.
+    * Combine an artist's albums into a single aggregated view.
+    * Added translations for Arabic, French, Bulgarian, Spanish and more.
+    * Fixed XSPF auto-updating.
+    * New Tomahawk logo and icon.
+
+Version 0.4.2:
+    * Fix ZeroConf protocol showing IP addresses instead of host names.
+    * Updated translations for various languages.
+    * Resuming playback restores correct volume settings.
+    * Reduced CPU usage during playback.
+    * Fixed not starting up due to case sensitivity issue on OS X.
+    * Fixed volume issue (too quiet) on Windows.
+
+Version 0.4.1:
+    * Fixed various crashes.
+    * Fixed issues with auto-updating XSPF playlists.
+    * Double-clicking a playlist starts playing it.
+    * Resolvers can now return disc number and album position for results.
+    * Fixed sorting playlists by track number.
+    * Fixed issues with changing proxy.
+    * Fixed Twitter authentication issues.
+    * Fixed Grooveshark support on Windows.
+
+Version 0.4.0:
+    * Added visual notification for database indexing job.
+    * Fixed icons not appearing in resolvers list.
+    * Fixed various UI glitches and stray error messages in stations.
+    * Fixed bug where album page would resolve bottom-to-top.
+    * Fixed bug where Footnotes would not update when changing selected album.
+    * Fixed dragging albums and artists from charts, album, and artist views.
+    * Fixed bug where filter text would be one step behind filter value.
+    * Fixed bug where resolvers would enable themselves after auto-updating.
+    * Fixed occasional crash when dropping tracks onto New Station item.
+    * Added jump-to-current-track support for search results page.
+    * Fixed non-resolving tracks when dragging from album view.
+    * Fixed fetching album covers for albums with special characters.
+    * Show errors and continue gracefully when resolved audio is not available.
+    * Fixed various crashes on exit.
+    * Added basic command-line options for playback control.
+    * Bumped up web api timeouts to allow web clients to finish resolving.
+    * Added filename suggestion when exporting a playlist.
+    * Cleaned up highlighting of artist names in album view.
+    * Cleaned up alignment of playlist items.
+    * Fixed potential crash when searching.
+    * Added support for disc number.
+    * Added SoundCloudWall.com charts.
+    * Added ability to "lock on" to a user when listening along, to skip along.
+    * Fixed bug where loved tracks would be refreshed much too often.
+    * Fixed some font size issues.
+    * Sped up Tomahawk startup by moving chart loading into a separate thread.
+    * Added support for parsing Grooveshark and Tinysong tracks and playlists.
+    * Reorganized sidebar to follow more logical item groupings.
+    * Added artist and album results to global searches.
+    * Fixed style and contrast issues when using GTK styles.
+    * Fixed paths to artwork when using MPRIS2 interface.
+    * Fixed out of sync Show/Hide menu items on OS X when hidden with cmd-h.
+    * Fixed /Volumes directory not showing up on OS X.
+    * Fixed startup crash on OS X.
+
+Version 0.3.3:
+    * Automatically load Super Collection tracks when no official release
+      information is available.
+    * Fixed stations not fetching new tracks under certain circumstances.
+    * Fixed Footnotes not always updating when selecting a new track.
+    * Added support for ow.ly, fb.me, itun.es and tinyurl.com URL shorteners.
+    * Fixed playback issues with non-latin filenames on Windows.
+    * Fixed tomahawk:// protocol not working properly on Windows.
+    * Fixed dupe menu entry appearing on OS X.
+    * Fixed invisible sidebar items on Linux.
+
+Version 0.3.2:
+    * Improved syncing process, it's faster and more reliable now.
+    * Fixed UPnP issues.
+    * Fixed not updating collections and views after a collection changes.
+    * Fixed not showing a source's proper name at all times.
+    * Improved music scanner reliability.
+    * Fixed various labels not being painted in the right color when selected.
+    * Support .oga (ogg mimetype) files.
+    * Fixed stuck Now Playing indicator icon.
+    * Fixed sidebar width of settings dialog on Windows.
+    * Fixed not always showing delete icon on hovered temporary pages.
+    * Fixed inability to select externally mounted drives.
+    * Fixed bug where speaker would be stuck next to a playlist.
+    * Fixed bug where first startup would show a loading spinner in the
+      Dashboard's "Recent Additions" forever.
+    * Automatically upgrade resolvers when an update is found.
+    * Fixed last played track of a friend never expiring.
+    * Fixed parsing of rdio tracks.
+    * Changed steering mechanism in stations to be user-friendlier.
+    * Fixed loading biographies of artist names with special characters.
+    * Fixed behaviour of dropping Spotify playlists on the sidebar.
+    * Fixed hard to read source-name in the audio control area on OS X.
+    * Fixed crashes when playing Grooveshark tracks.
+    * Fixed bug where clicking the latch button would flicker and unlatch.
+    * Fixed Jabber accounts not connecting properly when proxy is in use.
+
+Version 0.3.1:
+    * Fixed not resolving to local files.
+    * Fixed shutdown crash on Windows.
+    * Support more widget types in Javascript resolver configs.
+    * Fixed bug where red headphone would be visible on My Collection
+      when listened along to source went offline.
+    * Draw author name as well as avatar in recently played playlists.
+    * Fixed Tomahawk integration in Unity.
+    * Fixed incorrect item selected in source tree when deleting temporary
+      pages.
+    * Fixed currently played label disappearing after 10 minutes regardless
+      of length of track.
+    * Fixed crash on Sparkle upgrade on OS X.
+
+Version 0.3.0:
+    * Make artist names in the album view clickable.
+    * Don't start playing if a tomahawk:// link was clicked while Tomahawk
+      is paused.
+    * Make artist name clickable in header of Album pages.
+    * Added a drop shadow to cover images, and put placeholder in jewel case.
+    * Added shuffle and repeat support to tree view.
+    * Draw a speaker next to the currently playing playlist.
+    * Refresh station previews whenever a filter is changed.
+    * Support and show official releases on album and track pages.
+    * Filter out duplicates from station previews and upcoming tracks.
+    * Added YouTube resolver.
+    * Fixed bug where going offline then online would not re-connect to many
+      peers.
+    * Added support for auto-updating live XSPF playlists.
+    * Don't show an age of 41 years for tracks that have no age information.
+    * Show config UI for resolvers that have them as soon as you add them.
+    * Add support for Echo Nest Personal Catalogs and User Radio. Synchronize
+      your catalog with The Echo Nest and enable personal recommendations
+      from you and your friends.
+    * Added support for Grooveshark resolver (requires Grooveshark Anywhere).
+    * Fixed re-resolving when resolvers or sources go off- / online.
+    * Correctly sort recently played tracks on the Dashboard.
+    * Show a Lion full-screen toggle button if running on Lion.
+    * Show a list of users who are currently listening along to you.
+    * Show headphone icon in source item to allow users to listen along; paint
+      headphones red on a source if you are currently listening along to it.
+    * Added new job status view in the bottom of the source list that displays
+      current jobs such as resolving, parsing playlists, and loading from
+      database.
+    * Parse and convert a Spotify playlist URL when dropped anywhere on the
+      sidebar.
+    * Convert resolvers to use asynchronous calls to avoid blocking Tomahawk's
+      UI, greatly increasing responsiveness of Tomahawk while resolving.
+    * Fixed no playlists overlay not disappearing when playlists were added.
+    * Add support for parsing itunes track, artist and album links.
+    * Fixed crash when syncing playlists with peers.
+    * Add support for browsing, downloading and rating resolvers from within
+      Tomahawk directly.
+    * Support multi-folder selection and scanning.
+    * Fixed handling of special characters in tomahawk:// links
+    * Improve sidebar performance by caching pixmaps and shrinking them.
+    * Send updated playlists to peers when tracks are moved/copied.
+    * Remove splitter handles in sidebar.
+    * Fixed Tomahawk preventing system shutdown / logout.
+    * Ignore leading 'The' when sorting artists.
+    * Added Charts page, which shows various sources' top hits & artists.
+    * The Collection tree-views can now be filtered.
+    * Fixed crash when pressing enter in an empty playlist.
+    * Moved the song queue to the bottom of the sidebar.
+    * Added Footnotes, a contextual view that you can slide it.
+    * Show recently added playlists in dashboard rather than recently opened
+      playlists.
+    * Fixed seek slider and give it some smooth animation between ticks.
+    * Fixed Twitter issue where it would repeatedly send DMs to friends.
+    * Add a new drag and drop menu when dropping items onto playlists,
+      allowing users to drop the dragged tracks, the whole album, or
+      the whole artists's tracks.
+    * Bring Tomahawk window to the front when clicking a Tomahawk link.
+    * Fixed crash in source list when initially syncing with remote sources.
+    * Open temporary artist, album, and search playlists as temporary items
+      in the sidebar.
+    * Fixed sorting of playlists and items in the artist view.
+    * Allow dragging and dropping albums and artists to playlists.
+    * Added MPRIS 2.1 support.
+
+Version 0.2.3:
+    * Fixed opening Rdio and Spotify links.
+    * Fixed potential crash in sidebar during syncing of sources.
+    * When Listening Along, the last song a peer plays is no longer duplicated.
+    * Fixed an issue where the Twitter plugin could get out of sync if the
+      database was cleared, leading to eventual crashes when re-connecting.
+    * Fixed duplicate albums showing up on Dashboard.
+    * Automatically sort search results by score.
+    * Fixed stations being stuck not fetching more songs.
+    * Fixed issue where artist bio could be referring to a different artist.
+    * Opening a "tomahawk" URL (or other URL with Tomahawk) brings the Tomahawk
+      window to the foreground.
+
+Version 0.2.2:
+    * Fixed crash pressing previous and next when playing a song from the Queue.
+    * Fixed issue where wrench for newly added resolvers would not show up.
+    * Fixed sidebar statistics not updating after collection scan finished.
+    * Fixed omitting a few tracks in the Collection tree-view.
+    * Fixed sidebar & track sorting issues.
+    * Seek- & volume sliders now directly jump to the position you clicked on.
+    * Added ability to drag artists and albums within Tomahawk.
+    * (OS X) Fixed Ogg Vorbis support.
+
+Version 0.2.1:
+    * Fixed crashing trying to play an unavailable track.
+    * Fixed a crash caused by using Javascript resolvers.
+    * Fixed searching with Javascript resolvers.
+
+Version 0.2.0:
+    * Re-resolve queries when their resolved-to source goes offline.
+    * Cleanup formatting of Preference/Configure and Diagnostics windows.
+    * Add selection indicator on album art.
+    * Fix inability to create Echonest playlists based solely on style or mood.
+    * Created new Artist & Album page, showing various related information.
+    * Update playlists in dashboard to keep them in sync.
+    * Support Rdio track URLs and ability to drop them onto Tomahawk.
+    * Change "Recently Played" page to "Dashboard".
+    * Prioritize resolving newer queries to make GUI more responsive.
+    * Automatically expand local collection node in sidebar on launch.
+    * Display spinner animation while searching for tracks.
+    * Let Tomahawk-headless users trigger a rescan with --filescan.
+    * Include Stations and Automatic Playlists in "New Stations and Playlists".
+    * Always keep current page and sidebar selection in sync.
+    * New icon theme and many design tweaks.
+    * Fixed bug where drop indicator wouldn't show below the last track of a
+      playlist.
+    * Added support for "playing" Spotify track URLs (and t.co and bit.ly
+      shortened track URLs) and ability to drag/drop them into Tomahawk.
+    * Added support for JSPF playlists (XSPF via JSON).
+    * Scroll per pixel to making scrolling feel more natural.
+    * Filter out duplicate tracks in Collection tree view.
+    * Spotify resolver now honors SOCKS5 proxy settings.
+    * Made "show offline sources" menu option a toggle instead of two separate
+      entries.
+    * Properly decode escaped characters coming from HTTP API.
+    * Handle/display resolver file paths becoming invalid in Preferences.
+    * Fixed track skipping-on-pause bug when using Gstreamer backend.
+    * Fixed a few crashes that could occur when fetching data from Last.fm.
+    * Made Twitter dialog more readable/understandable.
+    * Fixed streaming from https:// links.
+    * Implement new Javascript resolver API and ability to present config
+      dialogs for resolvers.
+    * Show when a track was played in the Recently Played tracks history.
+    * Added context menus for Artists and Albums.
+    * Fixed playlist bugs that would cause track to stop playing when dropping
+      or moving items in the same playlist.
+    * Set volume to 75% on startup.
+    * Added "listen along" feature (and ability to "catch up").
+    * Added "love" feature - also "loves" track on Last.fm.
+    * Twitter checks for updates less often now, saving user API calls from
+      running out when using multiple clients.
+    * Added score column and score bars to indicate resolver match certainty.
+    * Added "New Additions" page for each source.
+    * Improved tomahawk:// link handling. Added support for http://toma.hk/.
+    * Fixed sorting by file size.
+    * Improved the way Adium status is updated with now-playing information.
+    * Re-resolve tracks when a resolver is added/removed/enabled/disabled.
+    * Added global search function that searches all available sources.
+    * Collection scanner can now run automatically, watching files and dirs for
+      changes.
+    * Added Pipeline status view.
+    * Allow seeking in songs - if supported by audio backend.
+    * Added ability to make a copy of a peer's playlist.
+    * Shuffle and Repeat settings are stored on a playlist by playlist basis.
+    * (Linux) Desktop notifications for now playing.
+    * (OS X) Removed "test login" button from Last.fm settings.
+    * (OS X) Added MediaKey support.
+    * (OS X) Don't quit on window close to conform to best practices.
+
+Version 0.1.0:
+    * Fixed stations so they resolve against all available sources instead of
+      only local and friend's collections.
+    * Add a Song seed for stations and automatic playlists, and allow dragging
+      of any tracks to the New Stations entry to create a pre-seeded station.
+    * Added auto-completion for artists while filling in a station or automatic
+      playlist.
+    * SOCKS5 proxy support. Noproxy hosts are also supported but no wildcard
+      support (yet).
+    * Support loading of - and exporting to - .xspf playlists.
+    * Added Tomahawk:// protocol support and share links for many things
+      including tracks, playlists, and stations.
+    * Autoload automatically detected resolvers on startup.
+    * Fix issue where track resolving spinner never stopped if tracks were
+      removed from playlist while resolving.
+    * Twitter & Jabber profile pictures are shown.
+    * Fix issues with stations where multiple tracks could be added at once.
+    * Allow multiple accounts of the same type.
+    * Add new Google account type, a thin wrapper around a Jabber plugin.
+    * Overhaul the settings dialog interface.
+    * Resolvers can now be enabled and disabled, and some can be configured
+      directly in Tomahawk, for example the new Spotify resolver.
+    * Split playlists and stations in sources sidebar. Show Recently Played
+      as a node under the Super Collection.
+    * Fix massive speed bottleneck on startup in the case of many recently
+      played playlists.
+    * Removed filter and song view from Super Collection, coming back in the
+      next release.
+    * Browse and play collections in our snappy tree-mode, which also shows
+      images for artists and albums.
+    * Fixed crash that could occur when playing a track from a browser.
+    * Fixed a crash caused by sources going on or offline.
+    * Huge optimizations in the resolving pipeline.
+    * Improved the handling of automatic status messages for Google Talk.
+    * Switch to Phonon sound system, allowing us to support a wide variety
+      of audio formats.
+    * UI tweaks and cleanup.
+    * (OS X) Open configuration dialogs as sliding sheets.
+    * (OS X) Increase our available file watches to the maximum that the system
+      reports.
+    * (OS X) Added 'Window' menu with zoom/minimize actions.
+
+Version 0.0.3:
+    * Show spinner while resolving playlists.
+    * Go back to previous page visible when deleting a playlist.
+    * Fixed issue where automatic playlists and station summaries were not
+      updated in the playlist header.
+    * Fixed an issue which caused duplicate items when rescanning.
+    * Revert change introduced in 0.0.2 causing Twitter protocol to not try
+      to reconnect to a peer if it couldn't connect the first time the plugin
+      was connected. This caused confusing (and for most unwanted) behavior.
+    * Fix crashes in Twitter authentication.
+    * Properly honor the chosen port number if a static host and port are
+      marked as preferred.
+    * Don't automatically try to resolve all incoming playback logs. This
+      speeds up importing sources a lot.
+    * Faster painting of playlists with lots of unresolved tracks.
+    * Prefer local results when results' score is equal.
+    * (Windows) The tomahawk:// protocol handler works on Windows now.
+    * (Windows) Prevent launching a second instance on Windows.
+    * (Windows) Fixed launching Tomahawk from Windows installer with admin
+      privileges.
+
+Version 0.0.2:
+    * Don't reconnect to Jabber if the settings dialog is closed successfully
+      but the Jabber settings haven't changed.
+    * Don't run a rescan of the local collection if the settings dialog is
+      closed successfully but the path hasn't changed.
+    * Don't attempt to connect to unavailable Twitter peers over and over.
+    * Find Twitter peers if the peer's Got Tomahawk? tweet is not their latest
+      tweet.
+    * Got Tomahawk? tweets can now be sent directly to specific users or in
+      private direct messages.
+    * Display a helpful message when someone sends a normal instant message to
+      the Tomahawk XMPP presence.
+    * Incompatible change: Twitter SIP protocol has changed slightly. 0.0.1
+      clients will not be able to talk to newer clients.
+    * Don't let long playlist or summary names force a large Tomahawk window.
+    * Tomahawk now asks you to authorize new contacts.
+
+Version 0.0.1:
+    * First public release.

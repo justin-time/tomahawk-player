@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@  --with kde --parallel  --list-missing
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DWITH_CRASHREPORTER=OFF -DBUILD_RELEASE=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_LIBEXECDIR=lib/tomahawk/libexec/ 
+
+override_dh_strip:
+	dh_strip --dbg-package=tomahawk-dbg

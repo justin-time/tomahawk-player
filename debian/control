@@ -1,0 +1,62 @@
+Source: tomahawk
+Section: kde
+Priority: optional
+Maintainer: Stefan Ahlers <stef.ahlers@t-online.de>
+Build-Depends: cmake,
+               debhelper (>= 7.3), 
+	       pkg-config,
+	       libqt4-dev,
+	       libqtwebkit-dev,
+	       libqjson-dev,
+	       libfftw3-dev,
+	       libsamplerate0-dev,
+	       zlib1g-dev,
+	       libgsasl7-dev, 
+	       liblucene++-dev, 
+	       libboost-dev,
+	       libboost-thread-dev,
+	       libboost-filesystem-dev,
+       	       libtag1-dev,
+	       libsparsehash-dev,
+	       libgnutls-dev,
+	       libqca2-dev,
+	       qtkeychain-dev,
+	       libattica-dev,
+	       libphonon-dev,
+	       libphononexperimental-dev,
+	       libqt4-sql-sqlite,
+	       libquazip-dev,
+	       liblastfm-dev,
+	       libjreen-dev,
+	       libtelepathy-qt4-dev,
+               libechonest-dev,
+	       pkg-kde-tools,
+	       kdelibs5-dev,
+	       kdelibs-bin,
+	       libx11-dev,
+	       libssl-dev,
+	       libwebsocketpp-dev
+Standards-Version: 3.9.5
+Homepage: http://tomahawk-player.org
+
+Package: tomahawk
+Architecture: any
+Depends: libqca2-plugin-ossl,
+         libqt4-sql-sqlite,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: phonon-backend-vlc
+Description: Multi source music player
+ A music player that plays not only your local collection, but also
+ streams from SoundCloud, Spotify, Beats, YouTube and many more.
+ You can even connect Tomahawk with your friends via Jabber / GTalk
+ and share your playlists and collection.
+
+Package: tomahawk-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: tomahawk (= ${binary:Version}), ${misc:Depends}
+Description: Social media player - debugging symbols
+ This package contains the debugging symbols to be used for debugging
+ problems with the tomahawk package.

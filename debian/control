@@ -36,16 +36,38 @@ Build-Depends: cmake,
 	       libx11-dev,
 	       libssl-dev,
 	       libwebsocketpp-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://tomahawk-player.org
 
 Package: tomahawk
 Architecture: any
-Depends: libqca2-plugin-ossl,
+Depends: libtomahawk,
+	 libqca2-plugin-ossl,
          libqt4-sql-sqlite,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: phonon-backend-vlc
+Description: Multi source music player
+ A music player that plays not only your local collection, but also
+ streams from SoundCloud, Spotify, Beats, YouTube and many more.
+ You can even connect Tomahawk with your friends via Jabber / GTalk
+ and share your playlists and collection.
+ 
+Package: libtomahawk
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Multi source music player
+ A music player that plays not only your local collection, but also
+ streams from SoundCloud, Spotify, Beats, YouTube and many more.
+ You can even connect Tomahawk with your friends via Jabber / GTalk
+ and share your playlists and collection.
+
+Package: libtomahawk-dev
+Architecture: any
+Depends: libtomahawk (= ${binary:Version}),
+	 ${misc:Depends},
+         ${shlibs:Depends}
 Description: Multi source music player
  A music player that plays not only your local collection, but also
  streams from SoundCloud, Spotify, Beats, YouTube and many more.

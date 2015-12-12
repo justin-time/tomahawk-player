@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Stefan Ahlers <stef.ahlers@t-online.de>
 Build-Depends: cmake,
-               debhelper (>= 7.3), 
+               debhelper (>= 9), 
 	       pkg-config,
 	       libqt4-dev,
 	       libqtwebkit-dev,
@@ -18,7 +18,7 @@ Build-Depends: cmake,
 	       libboost-filesystem-dev,
        	       libtag1-dev,
 	       libsparsehash-dev,
-	       libgnutls-dev,
+	       libgnutls28-dev,
 	       libqca2-dev,
 	       qtkeychain-dev,
 	       libattica-dev,
@@ -55,29 +55,36 @@ Description: Multi source music player
  
 Package: libtomahawk
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Description: Multi source music player
+Description: Core libraries for tomahawk
  A music player that plays not only your local collection, but also
  streams from SoundCloud, Spotify, Beats, YouTube and many more.
  You can even connect Tomahawk with your friends via Jabber / GTalk
  and share your playlists and collection.
+ .
+ This package contains the core libraries for the tomahawk player.
 
 Package: libtomahawk-dev
 Architecture: any
+Multi-Arch: same
 Depends: libtomahawk (= ${binary:Version}),
 	 ${misc:Depends},
          ${shlibs:Depends}
-Description: Multi source music player
+Description: Core libraries for tomahawk – development files
  A music player that plays not only your local collection, but also
  streams from SoundCloud, Spotify, Beats, YouTube and many more.
  You can even connect Tomahawk with your friends via Jabber / GTalk
  and share your playlists and collection.
+ .
+ This package contains the development files for the core libraries.
 
 Package: tomahawk-dbg
 Section: debug
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Depends: tomahawk (= ${binary:Version}), ${misc:Depends}
 Description: Social media player - debugging symbols
  This package contains the debugging symbols to be used for debugging

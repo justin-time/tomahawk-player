@@ -29,13 +29,7 @@ Copyright: 2011 Paulo Dias <paulo.miguel.dias@gmail.com>
 	   2014 Stefan Ahlers <stef.ahlers@t-online.de>
 License: GPL-3+
 
-Files: ./thirdparty/breakpad/third_party/curl/curlver.h
-Copyright: "1996, - 2009, Daniel Stenberg, <daniel@haxx.se>."
-  1998, - 2009, Daniel Stenberg, <daniel@haxx.se>, et al
-License: curl
-
 Files: thirdparty/SPMediaKeyTap/*
-       thirdparty/breakpad/processor/disassembler_x86.*
 Copyright: 2011 Joachim Bengtsson
 	   Google Inc
 License: BSD-Style
@@ -75,25 +69,3 @@ License: GPL-3+
  On Debian systems, the full text of the GNU General Public License
  version 3 can be found in the file
  `/usr/share/common-licenses/GPL-3'.
-
-License: curl
- All rights reserved.
- .
- Permission to use, copy, modify, and distribute this software for any purpose
- with or without fee is hereby granted, provided that the above copyright
- notice and this permission notice appear in all copies.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
- NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
- OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
- OR OTHER DEALINGS IN THE SOFTWARE.
- .
- Except as contained in this notice, the name of a copyright holder shall not
- be used in advertising or otherwise to promote the sale, use or other dealings
- in this Software without prior written authorization of the copyright holder.
-
-
-

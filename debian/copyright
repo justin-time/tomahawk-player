@@ -1,10 +1,11 @@
-Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?view=markup&pathrev=174
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: tomahawk
 Source: http://downloads.tomahawk-player.org/
+Files-Excluded: admin/mac admin/win thirdparty/SPMediaKeyTap data/fonts/* data/www/js/html5shim.js data/js/cryptojs/* data/js/cryptojs-core.js
 
 Files: *
-Copyright: 2010-2014 Christian Muehlhaeuser <muesli@tomahawk-player.org>
-	   2010-2014 Dominik Schmidt <domme@tomahawk-player.org>
+Copyright: 2010-2015 Christian Muehlhaeuser <muesli@tomahawk-player.org>
+	   2010-2015 Dominik Schmidt <domme@tomahawk-player.org>
 	   2010-2013 Leo Franchi <lfranchi@kde.org>
 	   2010-2012 Jeff Mitchell <jeff@tomahawk-player.org>
 	   2010-2013 Hugo Lindström <hugolm84@gmail.com>
@@ -12,13 +13,13 @@ Copyright: 2010-2014 Christian Muehlhaeuser <muesli@tomahawk-player.org>
 	   2010-2011 Christopher Reichert <creichert07@gmail.com>
 	   2010-2011 David Sansome <me@davidsansome.com>
 	   2010 Dmitry 'Krasu' Baryshev <ksquirrel.iv@gmail.com>
-           2011-2014 J Herskowitz <j@tomahawk-player.org>
-	   2011-2014 Teo Mrnjavac <teo@kde.org>
+           2011-2015 J Herskowitz <j@tomahawk-player.org>
+	   2011-2015 Teo Mrnjavac <teo@kde.org>
 	   2011-2012 Casey Link <unnamedrambler@gmail.com>
 	   2011 Ruslan Nigmatullin <euroelessar@ya.ru>
 	   2011 Michael Zanetti <mzanetti@kde.org>
            2011 Nokia Corporation and/or its subsidiary(-ies)
-	   2013-2014 Uwe L. Korn <uwelk@xhochy.com>
+	   2013-2015 Uwe L. Korn <uwelk@xhochy.com>
            2013-2014 Patrick von Reth <vonreth@kde.org>
 License: GPL-3+
 
@@ -26,31 +27,7 @@ Files: debian/*
 Copyright: 2011 Paulo Dias <paulo.miguel.dias@gmail.com>
            2011-2012 Philip Muškovac <yofel@gmx.net>
            2014 Aaron Honeycutt <aaronhoneycutt@kubuntu.org>
-	   2014 Stefan Ahlers <stef.ahlers@t-online.de>
-License: GPL-3+
-
-Files: thirdparty/SPMediaKeyTap/*
-Copyright: 2011 Joachim Bengtsson
-	   Google Inc
-License: BSD-Style
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions are met:
-  .
-  Neither the name of the organization nor the names of its contributors may be
-  used to endorse or promote products derived from this software without specific
-  prior written permission.
-  .
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+	   2015 Stefan Ahlers <stef.ahlers@t-online.de>
 License: GPL-3+
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

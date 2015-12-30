@@ -1,8 +1,0 @@
-# dist stuff we don't need on linux
-rm admin/mac
-rm admin/win
-# breakpad is entirely imported but only parts of it are actually used
-rm thirdparty/breakpad/client/mac
-rm thirdparty/breakpad/client/windows
-rm thirdparty/breakpad/third_party/protobuf
-rm thirdparty/breakpad/processor/testdata

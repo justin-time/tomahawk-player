@@ -1,0 +1,3 @@
+use-external-cryptojs.patch
+use-external-roboto-font.patch
+removeHtml5shim.patch

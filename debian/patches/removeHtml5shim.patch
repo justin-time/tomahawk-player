@@ -1,0 +1,41 @@
+From: Stefan Ahlers <stef.ahlers@t-online.de>
+Description: Remove html5shim.js files because it is only helpful for IE9.
+Last-Update: 2016-02-19
+Forwarded: no
+
+--- a/resources.qrc
++++ b/resources.qrc
+@@ -123,7 +123,6 @@
+         <file>data/www/css/elements.css</file>
+         <file>data/www/css/font-awesome.css</file>
+         <file>data/www/css/style.css</file>
+-        <file>data/www/js/html5shim.js</file>
+         <file>data/images/splash.svg</file>
+         <file>data/images/splash-unrounded.svg</file>
+         <file>data/www/index.html</file>
+--- a/data/www/auth.html
++++ b/data/www/auth.html
+@@ -19,10 +19,6 @@
+   <link href="/staticdata/css/elements.css" rel="stylesheet"><!-- Theme elements style -->
+   <link href="/staticdata/css/animate.css" rel="stylesheet"><!-- CSS Animations -->
+ 
+-   <!--[if lt IE 9]>
+-        <script src="/staticdata/js/html5shim.js"></script>
+-   <![endif]-->
+-
+     <noscript><link rel="stylesheet" href="/staticdata/css/no-js.css"></noscript>
+ 
+    <!--  Google Web Fonts -->
+--- a/data/www/index.html
++++ b/data/www/index.html
+@@ -19,10 +19,6 @@
+   <link href="/staticdata/css/elements.css" rel="stylesheet"><!-- Theme elements style -->
+   <link href="/staticdata/css/animate.css" rel="stylesheet"><!-- CSS Animations -->
+ 
+-   <!--[if lt IE 9]>
+-        <script src="/staticdata/js/html5shim.js"></script>
+-   <![endif]-->
+-
+     <noscript><link rel="stylesheet" href="/staticdata/css/no-js.css"></noscript>
+ 
+    <!--  Google Web Fonts -->

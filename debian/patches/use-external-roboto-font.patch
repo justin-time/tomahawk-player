@@ -1,0 +1,33 @@
+From: Stefan Ahlers <stef.ahlers@t-online.de>
+Description: Use external fonts-roboto-hinted package instead of included files.
+Last-Update: 2016-02-20
+Forwarded: no
+--- a/src/libtomahawk/utils/TomahawkStyle.cpp
++++ b/src/libtomahawk/utils/TomahawkStyle.cpp
+@@ -211,11 +211,11 @@
+ void
+ TomahawkStyle::loadFonts()
+ {
+-    QDir dir( ":/data/fonts" );
++    QDir dir( "/usr/share/fonts/truetype/roboto/hinted" );
+     foreach ( const QString& fileName, dir.entryList() )
+     {
+         tDebug( LOGVERBOSE ) << "Trying to add font resource:" << fileName;
+-        const int id = QFontDatabase::addApplicationFont( ":/data/fonts/" + fileName );
++        const int id = QFontDatabase::addApplicationFont( "/usr/share/fonts/truetype/roboto/hinted/" + fileName );
+         if ( id >= 0 )
+         {
+             tDebug( LOGVERBOSE ) << "Added font:" << id << QFontDatabase::applicationFontFamilies( id ).first();
+--- a/resources.qrc
++++ b/resources.qrc
+@@ -112,10 +112,6 @@
+         <file>data/images/network-activity.svg</file>
+         <file>data/images/play.svg</file>
+         <file>data/images/pause.svg</file>
+-        <file>data/fonts/Roboto-Bold.ttf</file>
+-        <file>data/fonts/Roboto-Medium.ttf</file>
+-        <file>data/fonts/Roboto-Regular.ttf</file>
+-        <file>data/fonts/Roboto-Thin.ttf</file>
+         <file>data/sql/dbmigrate-29_to_30.sql</file>
+         <file>data/sql/dbmigrate-30_to_31.sql</file>
+         <file>data/images/trending.svg</file>

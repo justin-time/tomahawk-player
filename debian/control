@@ -3,47 +3,49 @@ Section: kde
 Priority: optional
 Maintainer: Stefan Ahlers <stef.ahlers@t-online.de>
 Build-Depends: cmake,
-               debhelper (>= 9), 
-	       pkg-config,
-	       libqt4-dev,
-	       libqtwebkit-dev,
-	       libqjson-dev,
-	       libfftw3-dev,
-	       libsamplerate0-dev,
-	       zlib1g-dev,
-	       libgsasl7-dev, 
-	       liblucene++-dev, 
-	       libboost-dev,
-	       libboost-thread-dev,
-	       libboost-filesystem-dev,
-       	       libtag1-dev,
-	       libsparsehash-dev,
-	       libgnutls28-dev,
-	       libqca2-dev,
-	       qtkeychain-dev,
-	       libattica-dev,
-	       libphonon-dev,
-	       libphononexperimental-dev,
-	       libqt4-sql-sqlite,
-	       libquazip-dev,
-	       liblastfm-dev,
-	       libjreen-dev,
-	       libtelepathy-qt4-dev,
+               debhelper (>= 9),
+               kdelibs-bin,
+               kdelibs5-dev,
+               libattica-dev,
+               libboost-dev,
+               libboost-filesystem-dev,
+               libboost-thread-dev,
                libechonest-dev,
-	       pkg-kde-tools,
-	       kdelibs5-dev,
-	       kdelibs-bin,
-	       libx11-dev,
-	       libssl-dev,
-	       libwebsocketpp-dev
+               libfftw3-dev,
+               libgnutls28-dev,
+               libgsasl7-dev,
+               libjreen-dev,
+               liblastfm-dev,
+               liblucene++-dev,
+               libphonon-dev,
+               libphononexperimental-dev,
+               libqca2-dev,
+               libqjson-dev,
+               libqt4-dev,
+               libqt4-sql-sqlite,
+               libqtwebkit-dev,
+               libquazip-dev,
+               libsamplerate0-dev,
+               libsparsehash-dev,
+               libssl-dev,
+               libtag1-dev,
+               libtelepathy-qt4-dev,
+               libwebsocketpp-dev,
+               libx11-dev,
+               pkg-config,
+               pkg-kde-tools,
+               qtkeychain-dev,
+               zlib1g-dev
 Standards-Version: 3.9.6
 Homepage: http://tomahawk-player.org
+Vcs-Git: git://github.com/justin-time/tomahawk-player.git
+Vcs-Browser: https://github.com/justin-time/tomahawk-player
 
 Package: tomahawk
 Architecture: any
-Depends: libtomahawk,
-	 libqca2-plugin-ossl,
+Depends: libqca2-plugin-ossl,
          libqt4-sql-sqlite,
+         libtomahawk,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: phonon-backend-vlc
@@ -52,12 +54,11 @@ Description: Multi source music player
  streams from SoundCloud, Spotify, Beats, YouTube and many more.
  You can even connect Tomahawk with your friends via Jabber / GTalk
  and share your playlists and collection.
- 
+
 Package: libtomahawk
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Core libraries for tomahawk
  A music player that plays not only your local collection, but also
  streams from SoundCloud, Spotify, Beats, YouTube and many more.
@@ -69,9 +70,7 @@ Description: Core libraries for tomahawk
 Package: libtomahawk-dev
 Architecture: any
 Multi-Arch: same
-Depends: libtomahawk (= ${binary:Version}),
-	 ${misc:Depends},
-         ${shlibs:Depends}
+Depends: libtomahawk (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: Core libraries for tomahawk – development files
  A music player that plays not only your local collection, but also
  streams from SoundCloud, Spotify, Beats, YouTube and many more.

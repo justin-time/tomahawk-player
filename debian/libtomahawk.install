@@ -1,7 +1,7 @@
-usr/lib/*/libtomahawk.so.*
 usr/lib/*/libtomahawk-playdarapi.so.*
 usr/lib/*/libtomahawk-widgets.so.*
+usr/lib/*/libtomahawk.so.*
 usr/lib/*/libtomahawk_account_*.so
+usr/lib/*/libtomahawk_configstorage_*.so
 usr/lib/*/libtomahawk_infoplugin_*.so
 usr/lib/*/libtomahawk_viewpage_*.so
-usr/lib/*/libtomahawk_configstorage_*.so

@@ -1,5 +1,5 @@
-usr/lib/*/cmake/*
 usr/include/libtomahawk/*
-usr/lib/*/libtomahawk.so
+usr/lib/*/cmake/*
 usr/lib/*/libtomahawk-playdarapi.so
 usr/lib/*/libtomahawk-widgets.so
+usr/lib/*/libtomahawk.so
